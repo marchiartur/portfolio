@@ -8,9 +8,12 @@ import Text from "../../components/text";
 const CardResult = (props: ICardResultProps) => {
 	return (
 		<div className={styles.container}>
-			{props.text.map((e) => {
+			{props.text.map((e, index) => {
 				return (
-					<div className={styles.result}>
+					<div
+						key={`CardResult__${index}`}
+						className={styles.result}
+					>
 						<Image
 							alt=''
 							src={CheckIcon}

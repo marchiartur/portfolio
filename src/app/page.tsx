@@ -5,4 +5,6 @@ export default function Home() {
 	const router = useRouter();
 
 	router.push("pt-BR");
+
+	return <></>;
 }

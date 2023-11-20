@@ -4,6 +4,7 @@ import Text from "~/app/[lang]/components/text";
 import variables from "~/app/variables.module.scss";
 import styles from "./index.module.scss";
 import Button from "~/app/[lang]/components/button";
+import Link from "next/link";
 
 const About = () => {
 	return (
@@ -47,10 +48,12 @@ const About = () => {
 					}}
 				/>
 
-				<Button
-					text='Entrar em contato'
-					type='secondary'
-				/>
+				<Link href='/pt-BR/#contact'>
+					<Button
+						text='Entrar em contato'
+						type='secondary'
+					/>
+				</Link>
 			</div>
 		</div>
 	);

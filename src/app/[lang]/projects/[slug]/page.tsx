@@ -52,8 +52,13 @@ const DetailedProject = (props: { params: IParamsProps & ISlugProps }) => {
 				</Text>
 
 				<div className={styles.technologiesCards}>
-					{data.technologies.map((e) => {
-						return <CardTechnology {...e} />;
+					{data.technologies.map((e, index) => {
+						return (
+							<CardTechnology
+								key={`cardTechnology__${index}`}
+								{...e}
+							/>
+						);
 					})}
 				</div>
 			</div>
@@ -68,8 +73,15 @@ const DetailedProject = (props: { params: IParamsProps & ISlugProps }) => {
 				</Text>
 
 				<div>
-					{data.challenges.map((p) => {
-						return <Text marginBottom='10px'>{p}</Text>;
+					{data.challenges.map((p, index) => {
+						return (
+							<Text
+								key={`challenge_${index}`}
+								marginBottom='10px'
+							>
+								{p}
+							</Text>
+						);
 					})}
 				</div>
 			</div>
