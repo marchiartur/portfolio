@@ -48,7 +48,7 @@ const About = () => {
 					}}
 				/>
 
-				<Link href='/pt-BR/#contact'>
+				<Link href='/#contact'>
 					<Button
 						text='Entrar em contato'
 						type='secondary'
