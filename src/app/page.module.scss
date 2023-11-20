@@ -1,21 +1,6 @@
-.container {
-    margin: 0px 244px;
-}
-
 .contents {
     display: flex;
     flex-direction: column;
     gap: 330px;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        margin: 0 120px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        margin: 21px;
-    }
-}

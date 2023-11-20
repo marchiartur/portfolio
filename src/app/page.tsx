@@ -1,10 +1,22 @@
-"use client";
-import { useRouter } from "next/navigation";
+import styles from "./page.module.scss";
+import About from "./homepage/about";
+import Contact from "./homepage/contact";
+import Projects from "./homepage/projects";
+import { IParamsProps } from "./params.types";
+import Footer from "./components/footer";
 
-export default function Home() {
-	const router = useRouter();
+export default function Home({ params }: { params: IParamsProps }) {
+	return (
+		<div>
+			<div className={styles.contents}>
+				<About />
 
-	router.push("pt-BR");
+				<Projects params={params} />
 
-	return <></>;
+				<Contact />
+
+				<Footer />
+			</div>
+		</div>
+	);
 }

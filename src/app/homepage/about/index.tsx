@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Text from "~/app/[lang]/components/text";
+import Text from "~/app/components/text";
 import variables from "~/app/variables.module.scss";
 import styles from "./index.module.scss";
-import Button from "~/app/[lang]/components/button";
+import Button from "~/app/components/button";
 import Link from "next/link";
 
 const About = () => {

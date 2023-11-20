@@ -1,9 +1,9 @@
 import React from "react";
 import { IProjectCardProps } from "./index.types";
-import Text from "~/app/[lang]/components/text";
+import Text from "~/app/components/text";
 import variables from "~/app/variables.module.scss";
 import Image from "next/image";
-import Button from "~/app/[lang]/components/button";
+import Button from "~/app/components/button";
 import RightArrow from "~/app/icons/rightArrow";
 import styles from "./index.module.scss";
 import Link from "next/link";
@@ -28,7 +28,7 @@ const ProjectCard = (props: IProjectCardProps) => {
 					fontWeight={400}
 				/>
 
-				<Link href={params.lang + "/projects/" + slug}>
+				<Link href={"/projects/" + slug}>
 					<Button
 						type='text'
 						text='Ver detalhes'

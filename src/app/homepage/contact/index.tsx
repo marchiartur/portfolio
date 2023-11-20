@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./index.module.scss";
-import Text from "~/app/[lang]/components/text";
-import Button from "~/app/[lang]/components/button";
+import Text from "~/app/components/text";
+import Button from "~/app/components/button";
 import ForwardMessageIcon from "~/app/icons/forwardMessage";
-import SectionTitle from "~/app/[lang]/components/sectionTitle";
+import SectionTitle from "~/app/components/sectionTitle";
 import Link from "next/link";
 
 const Contact = () => {

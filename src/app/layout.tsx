@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { i18n } from "../../i18n-config";
-import Navbar from "./[lang]/components/navbar";
+import Navbar from "./components/navbar";
 import classNames from "classnames";
 import styles from "./layout.module.scss";
 
@@ -13,10 +12,6 @@ export const metadata: Metadata = {
 	description: "Web developer portfolio",
 };
 
-export async function generateStaticParams() {
-	return i18n.locales.map((locale) => ({ lang: locale }));
-}
-
 export default function RootLayout({
 	children,
 	params,
@@ -25,7 +20,7 @@ export default function RootLayout({
 	params: { lang: string };
 }) {
 	return (
-		<html lang={params.lang}>
+		<html lang='pt-BR'>
 			<body className={classNames(inter.className, styles.container)}>
 				<Navbar params={params} />
 

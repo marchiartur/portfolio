@@ -11,7 +11,7 @@ const NavbarContainer = ({ params }: { params: IParamsProps }) => {
 	return (
 		<>
 			<div className={styles.container}>
-				<Link href='/pt-BR/#about'>
+				<Link href='/#about'>
 					<Text
 						text='Sobre'
 						fontWeight={500}
@@ -19,7 +19,7 @@ const NavbarContainer = ({ params }: { params: IParamsProps }) => {
 					/>
 				</Link>
 
-				<Link href='/pt-BR/#projects'>
+				<Link href='/#projects'>
 					<Text
 						text='Projetos'
 						color={variables.onyx}
@@ -27,7 +27,7 @@ const NavbarContainer = ({ params }: { params: IParamsProps }) => {
 					/>
 				</Link>
 
-				<Link href='/pt-BR/#contact'>
+				<Link href='/#contact'>
 					<Text
 						text='Contato'
 						fontWeight={500}
