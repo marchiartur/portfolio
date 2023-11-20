@@ -1,0 +1,46 @@
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.containerName {
+    display: inline-flex;
+}
+
+.description {
+    width: 610px;
+}
+
+.namePreffix, .name {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        width: 80%;
+    }
+
+    .namePreffix, .name {
+        font-size: 34px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .namePreffix, .name {
+        font-size: 40px;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}

@@ -1,0 +1,30 @@
+@import '../../../variables.module.scss';
+
+.container {
+    display: flex;
+    padding: 93px 24px 24px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-shrink: 0;
+    background-color: $light-white;
+    border-radius: 22px;
+}
+
+.image {
+    align-self: center;
+    border-radius: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tag {
+    border-radius: 26px;
+    border: 1px solid $white;
+    background-color: $white;
+    padding: 6px 12px;
+}

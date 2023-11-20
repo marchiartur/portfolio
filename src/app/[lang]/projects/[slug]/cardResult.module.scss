@@ -1,0 +1,17 @@
+@import '../../../variables.module.scss';
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-left: 5px;
+}

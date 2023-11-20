@@ -1,0 +1,32 @@
+$black: #000000;
+$white: #ffffff;
+$gray: #B5B5B5;
+$onyx: #181818;
+$dark-gray: #808080; 
+$medium-gray: rgba(128, 128, 128, 0.5);
+$light-gray: #C5C5C5;
+$light-blue: rgba(63, 100, 234, 0.43);
+$light-red: rgba(233, 63, 64, 0.43);
+$light-yellow: rgba(255, 184, 0, 0.43);
+$gradient: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+
+$black-gradient: linear-gradient(to right, #1A1A1A, #131313);
+
+$white-twenty: rgba($white, 25%);
+$light-white: #F3F3F3;
+
+:export {
+  black: $black;
+  white: $white;
+  gray: $gray;
+  onyx: $onyx;
+  darkGray: $dark-gray;
+  mediumGray: $medium-gray;
+  lightGray: $light-gray;
+  lightBlue: $light-blue;
+  lightRed: $light-red;
+  lightYellow: $light-yellow;
+  gradient: $gradient;
+  blackGradient: $black-gradient;
+  white25: $white-twenty;
+}
